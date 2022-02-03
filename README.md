@@ -21,5 +21,7 @@ Displays a online store that pulls items from a backend, handles authentication 
 
 ## Technology used:
 React, Redux, Sass, Jest, Firebase, Stripe API, GraphQL
-## Credits
+## View project
+View the hosted project [here](https://online-store-jaydenl.herokuapp.com/) *Note may take a minute to load
+## Credits:
 Big thanks to Andrei Neagoie and Yihua Zhang. Base site can be found in the course: [Complete react devleoper](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
