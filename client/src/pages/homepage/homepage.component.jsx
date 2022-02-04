@@ -1,7 +1,7 @@
 import React, { Profiler } from 'react';
 
 import Directory from '../../components/directory/directory.component';
-
+import Hero from '../../components/hero/Hero.component';
 import { HomePageContainer } from './homepage.styles';
 
 const HomePage = () => (

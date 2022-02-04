@@ -1,13 +1,12 @@
 .entire-footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
-  padding-top: 10px;
   background-color: #000;
   color: #fff;
   margin-top: auto;
+
   .footer-container {
     width: 100%;
+    align-self: flex-end;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;

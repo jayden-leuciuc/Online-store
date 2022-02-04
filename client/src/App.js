@@ -8,7 +8,9 @@ import Footer from './components/footer/Footer.component';
 import Spinner from './components/spinner/spinner.component';
 import ErrorBoundary from './components/error-boundary/error-boundary.component';
 
-import { GlobalStyle } from './global.styles';
+import Contact from './components/contact/Contact.component';
+
+import './App.styles.scss';
 
 import { selectCurrentUser } from './redux/user/user.selectors';
 import { checkUserSession } from './redux/user/user.actions';
@@ -26,8 +28,7 @@ const App = ({ checkUserSession, currentUser }) => {
   }, [checkUserSession]);
 
   return (
-    <div>
-      <GlobalStyle />
+    <div className='app-container'>
       {/*Header is outside of switch, so that it is not re-rendered on page switch */}
       <Header />
       <Switch>
@@ -37,6 +38,7 @@ const App = ({ checkUserSession, currentUser }) => {
 
             <Route path='/shop' component={ShopPage} />
             <Route exact path='/checkout' component={CheckoutPage} />
+            {/* <Route exact path='/contact' component={Contact} /> */}
             <Route
               exact
               path='/signin'
@@ -47,6 +49,7 @@ const App = ({ checkUserSession, currentUser }) => {
           </Suspense>
         </ErrorBoundary>
       </Switch>
+      {/*<Footer />*/}
     </div>
   );
 };
