@@ -10,6 +10,8 @@ import ErrorBoundary from './components/error-boundary/error-boundary.component'
 
 import Contact from './components/contact/Contact.component';
 
+import SiteBanner from './components/site-banner/Site-banner.component';
+
 import './App.styles.scss';
 
 import { selectCurrentUser } from './redux/user/user.selectors';
@@ -30,6 +32,7 @@ const App = ({ checkUserSession, currentUser }) => {
   return (
     <div className='app-container'>
       {/*Header is outside of switch, so that it is not re-rendered on page switch */}
+      <SiteBanner />
       <Header />
       <Switch>
         <ErrorBoundary>
