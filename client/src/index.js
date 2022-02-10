@@ -11,7 +11,9 @@ import './index.css';
 import App from './App';
 
 ReactDOM.render(
+  //Redux provider
   <Provider store={store}>
+    {/* React error handling */}
     <React.StrictMode>
       <BrowserRouter>
         <PersistGate persistor={persistor}>

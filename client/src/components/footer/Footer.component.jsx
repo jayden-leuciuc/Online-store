@@ -11,16 +11,16 @@ function Footer() {
         <div className='logo-Social-Container'>
           <img src='' alt='Logo' />
           <div className='social-icons'>
-            <a href='https://facebook.com' target='_blank'>
+            <a href='https://facebook.com' target='_blank' rel='noreferrer'>
               <FiFacebook className='icon' />
             </a>
-            <a href='https://instagram.com' target='_blank'>
+            <a href='https://instagram.com' target='_blank' rel='noreferrer'>
               <FiInstagram className='icon' />
             </a>
-            <a href='https://twitter.com' target='_blank'>
+            <a href='https://twitter.com' target='_blank' rel='noreferrer'>
               <FiTwitter className='icon' />
             </a>
-            <a href='https://youtube.com' target='_blank'>
+            <a href='https://youtube.com' target='_blank' rel='noreferrer'>
               <FiYoutube className='icon' />
             </a>
           </div>
@@ -68,13 +68,10 @@ function Footer() {
         </ul>
         <ul>
           <li>
-            <a href=''>Terms</a>
+            <a href='/terms'>Terms</a>
           </li>
           <li>
-            <a href=''>Privacy Policy</a>
-          </li>
-          <li>
-            <a href=''>CA Supply Chains Act</a>
+            <a href='/privacy-policy'>Privacy Policy</a>
           </li>
         </ul>
       </div>
