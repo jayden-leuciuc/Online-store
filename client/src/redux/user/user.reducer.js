@@ -5,7 +5,6 @@ const INITIAL_STATE = {
   error: null,
 };
 
-//If state is never set, use initial state value
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case UserActionTypes.SIGN_IN_SUCCESS:
@@ -27,7 +26,6 @@ const userReducer = (state = INITIAL_STATE, action) => {
         ...state,
         error: action.payload,
       };
-
     default:
       return state;
   }

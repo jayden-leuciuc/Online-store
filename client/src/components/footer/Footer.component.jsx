@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { FiInstagram, FiFacebook, FiTwitter, FiYoutube } from 'react-icons/fi';
-
+import { FiInstagram, FiFacebook, FiTwitter } from 'react-icons/fi';
+import { ReactComponent as Logo } from '../../assets/crown.svg';
 import './Footer.styles.scss';
 
 function Footer() {
@@ -9,7 +9,7 @@ function Footer() {
     <div className='entire-footer'>
       <footer class='footer-container'>
         <div className='logo-Social-Container'>
-          <img src='' alt='Logo' />
+          <Logo className='logo-logo' />
           <div className='social-icons'>
             <a href='https://facebook.com' target='_blank' rel='noreferrer'>
               <FiFacebook className='icon' />
@@ -19,9 +19,6 @@ function Footer() {
             </a>
             <a href='https://twitter.com' target='_blank' rel='noreferrer'>
               <FiTwitter className='icon' />
-            </a>
-            <a href='https://youtube.com' target='_blank' rel='noreferrer'>
-              <FiYoutube className='icon' />
             </a>
           </div>
         </div>
@@ -63,8 +60,18 @@ function Footer() {
       <hr />
       <div className='lower-footer'>
         <ul>
-          <li>Icon US</li>
           <li>E-Commerce Store &#169;</li>
+        </ul>
+        <ul>
+          <a href='https://facebook.com' target='_blank' rel='noreferrer'>
+            <FiFacebook className='icon' />
+          </a>
+          <a href='https://instagram.com' target='_blank' rel='noreferrer'>
+            <FiInstagram className='icon' />
+          </a>
+          <a href='https://twitter.com' target='_blank' rel='noreferrer'>
+            <FiTwitter className='icon' />
+          </a>
         </ul>
         <ul>
           <li>
