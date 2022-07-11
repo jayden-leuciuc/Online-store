@@ -2,8 +2,7 @@
     "name": "e-commerce-server",
     "version": "1.0.0",
     "engines": {
-        "node": "14.17.0",
-        "npm": "6.14.13"
+        "node": "14.17.0"
     },
     "scripts": {
         "client": "cd client && npm run start",
@@ -20,7 +19,6 @@
         "dotenv": "7.0.0",
         "express": "^4.16.4",
         "express-sslify": "^1.2.0",
-        "heroku": "^7.33.3",
         "react-router": "^6.2.1",
         "react-router-dom": "^6.0.0-beta.8",
         "stripe": "6.28.0"
